@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <link rel="stylesheet" href="./SimpleCalculator.css">
+   <script src="./SimpleCalculator.js"></script>
+</head>
+<body onload="digitalclock()">
+    <center>
+    <div id="calculator">
+        <h1 id="Time"></h1>
+        <br>
+    <form name="cform">
+        <input id="dis" name="Answer">
+        <br><br>
+        <input class="a" type="button" value="1" onclick="cform.Answer.value +='1'">
+        <input class="a" type="button" value="2" onclick="cform.Answer.value +='2'">
+        <input class="a" type="button" value="3" onclick="cform.Answer.value +='3'">
+        <input class="a" type="button" value="+" onclick="cform.Answer.value +='+'">
+        <br><br>
+        <input class="a" type="button" value="4" onclick="cform.Answer.value +='4'">
+        <input class="a" type="button" value="5" onclick="cform.Answer.value +='5'">
+        <input class="a" type="button" value="6" onclick="cform.Answer.value +='6'">
+        <input class="a" type="button" value="-" onclick="cform.Answer.value +='-'">
+        <br><br>
+        <input class="a" type="button" value="7" onclick="cform.Answer.value +='7'">
+        <input class="a" type="button" value="8" onclick="cform.Answer.value +='8'">
+        <input class="a" type="button" value="9" onclick="cform.Answer.value +='9'">
+        <input class="a" type="button" value="*" onclick="cform.Answer.value +='*'">
+        <br><br>
+        <input class="a" type="button" value="%" onclick="cform.Answer.value +='%'">
+        <input class="a" type="button" value="0" onclick="cform.Answer.value +='0'">
+        <input class="a" type="button" value="." onclick="cform.Answer.value +='.'">
+        <input class="a" type="button" value="/" onclick="cform.Answer.value +='/'">
+        <br><br>
+        <input id="clr" type="button" value="Clear" onclick="cform.Answer.value=''">
+        <input id="equ" type="button" value="=" onclick="cform.Answer.value=eval(cform.Answer.value)">
+    </form>
+</div>
+
+</script>
+</center>
+</body>
+</html>
